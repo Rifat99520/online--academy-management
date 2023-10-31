@@ -3,23 +3,23 @@
 <head>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href=https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css>
-<script src=https://code.jquery.com/jquery-3.6.0.min.js></script>
-<script src=https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js></script>
+
 <script data-main="js/main" src="js/require.js"></script>
 </head>
 <body>
-    <div class="sidebar">
+    <div id="sidebar">
         <ul>
-            <li><a href="javascript:void(0)" onclick="loadContent('student.html')">students</a></li>
-            <li><a href="javascript:void(0)" onclick="loadContent('instructor.html')">Instructors</a></li>
+            <li><a href="student.html" id="StudentController">students</a></li>
+            
+            <!-- <li><a href="javascript:void(0)" onclick="loadContent('instructor.html')">Instructors</a></li>
             <li><a href="javascript:void(0)" onclick="loadContent('batches.html')">Batches</a></li>
             <li><a href="javascript:void(0)" onclick="loadContent('questions.html')">Questions</a></li>
-            <li><a href="javascript:void(0)" onclick="loadContent('questions_status.html')">Questions' Status</a></li>
+            <li><a href="javascript:void(0)" onclick="loadContent('questions_status.html')">Questions' Status</a></li> -->
         </ul>
     </div>
     <div class="content" id="main-content">
         <!-- Content will be loaded here -->
     </div>
-    <script> require(['BaseController']);</script>
+
 </body>
 </html>

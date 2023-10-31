@@ -1,12 +1,18 @@
 require.config({
     baseUrl: 'js',
     paths : {
-        Student : 'student',
-        BaseController : 'BaseController',
-        
+        jquery : 'ExternalScript/jquery.min',
+        DataTable: 'ExternalScript/jquery.dataTables.min',
+        App : 'App',
+        AjaxHelper: 'Utility/AjaxHelper',
+        SideBarController: 'SideBar/SideBarController',
+        SideBarService: 'SideBar/SideBarService',
+
+        StudentController: 'Student/StudentController',
+        StudentService: 'Student/StudentService',
     }
 });
-
-require(['BaseController'], function (BaseController) {
-    
+require(['App'], function (App) {
+    App.init();
 });
+
