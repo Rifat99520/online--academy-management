@@ -4,6 +4,7 @@ define('SideBarController', ['require','jquery', 'SideBarService'], function(req
     };
 
     SideBarController.prototype.loadSideBar = function(callback){
+        //TODO: Load Data Dynamically
         sideBarService.getSideBarData(function(data){
             console.log(data);
             //Loop on the data and insert into sidebar
