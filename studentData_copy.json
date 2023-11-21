@@ -1,0 +1,23 @@
+[
+    {
+      "s_id": 1,
+      "name": "John Doe",
+      "grad_year": 2023,
+      "email": "john.doe@example.com",
+      "batch_id": 101
+    },
+    {
+      "s_id": 2,
+      "name": "Jane Smith",
+      "grad_year": 2024,
+      "email": "jane.smith@example.com",
+      "batch_id": 102
+    },
+    {
+      "s_id": 3,
+      "name": "Alice Johnson",
+      "grad_year": 2022,
+      "email": "alice.johnson@example.com",
+      "batch_id": 101
+    }
+  ]

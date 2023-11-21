@@ -1,9 +1,13 @@
 define('App', ['jquery', 'SideBarController'], function($, sideBarController){
     var init = function(){
-        //TODO: LOAD DATA FROM SIDEBAR
-        sideBarController.loadSideBar(function(pageHtml){
-            console.log(pageHtml + " loaded Successfully");
-        });
+
+        
+
+        
+        //TODO: Create sideBarController.init() method and add he code written in index.html script tag there
+        //From the init() method call loadSideBar as well
+        
+        sideBarController.init();
 
     }
 

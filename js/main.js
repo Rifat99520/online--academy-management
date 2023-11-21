@@ -10,6 +10,12 @@ require.config({
 
         StudentController: 'Student/StudentController',
         StudentService: 'Student/StudentService',
+
+        InstructorController: 'Instructor/InstructorController',
+        InstructorService: 'Instructor/InstructorService',
+
+        QuestionsController: 'Questions/QuestionsController',
+        QuestionsService: 'Questions/QuestionsService',
     }
 });
 require(['App'], function (App) {
