@@ -1,11 +1,11 @@
-define('StudentService', ['jquery'], function ($) {
-    var StudentService = function () {
+define('QuestionsService', ['jquery'], function ($) {
+    var QuestionsService = function () {
 
     }
 
     //Refer this code to understand how to fetch data from .json files
-    StudentService.prototype.getStudentData = function (callback) {
-        const dataUrl = "studentData_copy.json";
+    QuestionsService.prototype.getQuestionsData = function (callback) {
+        const dataUrl = "questionsData.json";
 
         fetch(dataUrl)
             .then(response => response.json())
@@ -15,5 +15,5 @@ define('StudentService', ['jquery'], function ($) {
             });
     };
 
-    return new StudentService();
+    return new QuestionsService();
 });

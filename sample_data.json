@@ -22,20 +22,7 @@
       "batch_id": 101
     }
   ],
-  "Instructors": [
-    {
-      "i_id": 1,
-      "name": "Professor Smith",
-      "avg_rating": 4.5,
-      "email": "prof.smith@example.com"
-    },
-    {
-      "i_id": 2,
-      "name": "Dr. Johnson",
-      "avg_rating": 4.2,
-      "email": "dr.johnson@example.com"
-    }
-  ],
+ 
   "Batches": [
     {
       "batch_id": 101,

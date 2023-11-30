@@ -8,16 +8,19 @@ define('StudentController', ['jquery', 'StudentService', 'DataTable'], function 
 
 
         studentService.getStudentData(function (studentList) {
+            //TODO: Some chanegs required here after spliting StudentData.json
+
             console.log(studentList);
-            const students = studentList.Students;
             const table = $('#studentTable').DataTable();
-            students.forEach(student => {
+            studentList.forEach(student => {
                 table.row.add([
+
                     student.s_id,
                     student.name,
                     student.grad_year,
                     student.email,
                     student.batch_id
+
                 ]).draw(false);
             });
 
@@ -27,27 +30,27 @@ define('StudentController', ['jquery', 'StudentService', 'DataTable'], function 
 
 
 
-        // function loadContent(url) {
-        //     // const xhttp = new XMLHttpRequest();
-        //     // xhttp.onreadystatechange = function() {
-        //     //     if (this.readyState === 4 && this.status === 200) {
-        //     //         loadStudentData();
-        //     //         document.getElementById("main-content").innerHTML = this.responseText;
-        //     //     }
-        //     // };
-        //     // xhttp.open("GET", url, true);
-        //     // xhttp.send();
-        //     $("#main-content").load(url, (response, status, xhr) => {
-        //         if (status == "success") {
-        //             console.log("Data loaded successfully!");
-        //         } else {
-        //             console.log("Failed to load data");
-        //         }
-        //     });
-        // }
+    // function loadContent(url) {
+    //     // const xhttp = new XMLHttpRequest();
+    //     // xhttp.onreadystatechange = function() {
+    //     //     if (this.readyState === 4 && this.status === 200) {
+    //     //         loadStudentData();
+    //     //         document.getElementById("main-content").innerHTML = this.responseText;
+    //     //     }
+    //     // };
+    //     // xhttp.open("GET", url, true);
+    //     // xhttp.send();
+    //     $("#main-content").load(url, (response, status, xhr) => {
+    //         if (status == "success") {
+    //             console.log("Data loaded successfully!");
+    //         } else {
+    //             console.log("Failed to load data");
+    //         }
+    //     });
+    // }
 
-        // return loadContent;
+    // return loadContent;
 
-        return new StudentController();
+    return new StudentController();
 
-    });
+});
