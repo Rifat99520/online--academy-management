@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "html": "student.html",
+    "controller": "StudentController",
+    "title": "Students"
+  },
+  {
+    "id": 2,
+    "html": "batches.html",
+    "controller": "Batches",
+    "title": "Batches"
+  },
+  {
+    "id": 3,
+    "html": "instructor.html",
+    "controller": "InstructorController",
+    "title": "Instructors"
+  },
+  {
+    "id": 4,
+    "html": "questions.html",
+    "controller": "QuestionsController",
+    "title": "Questions"
+  },
+  {
+    "id":5,
+    "html": "questions_status.html",
+    "controller": "questions_status",
+    "title": "Questions Status"
+  }
+]
